@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://slouchd.github.io/sitemap.xml
+Sitemap: https://blog.slouch.dev/sitemap.xml
