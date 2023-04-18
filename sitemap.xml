@@ -3,18 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.slouch.dev/blog/</loc>
-    <lastmod>2023-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/</loc>
-    <lastmod>2023-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.slouch.dev/blog/today-i-remember-oom-killer/</loc>
+    <lastmod>2023-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.slouch.dev/blog/tag/today-i-remember/</loc>
+    <lastmod>2023-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/categories/pinned/</loc>
     <lastmod>2023-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/blog/today-i-remember-introduction/</loc>
-    <lastmod>2023-04-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.slouch.dev/blog/tag/today-i-remember/</loc>
     <lastmod>2023-04-17T00:00:00+00:00</lastmod>
   </url>
 </urlset>
