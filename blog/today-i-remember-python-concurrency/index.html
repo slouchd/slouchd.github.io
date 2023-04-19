@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://blog.slouch.dev/images/favicon.png" />
+<title>Today I Remember - Python Concurrency | slouch&#39;s blog</title>
+<meta name="title" content="Today I Remember - Python Concurrency" />
+<meta name="description" content="Python is a powerful and versatile language, but there is one thing it is not so great at: multithreading. If you have ever tried to write a Python script that spawns multiple threads to do work in parallel, you may have run into issues with deadlocks, race conditions, or other concurrency bugs.
+But fear not - there is a solution! The concurrent.futures module in Python 3 makes multithreading much more manageable, and can help you avoid many of the common pitfalls that come with concurrent programming." />
+<meta name="keywords" content="today-i-remember," />
+
+
+<meta property="og:title" content="Today I Remember - Python Concurrency" />
+<meta property="og:description" content="Python is a powerful and versatile language, but there is one thing it is not so great at: multithreading. If you have ever tried to write a Python script that spawns multiple threads to do work in parallel, you may have run into issues with deadlocks, race conditions, or other concurrency bugs.
+But fear not - there is a solution! The concurrent.futures module in Python 3 makes multithreading much more manageable, and can help you avoid many of the common pitfalls that come with concurrent programming." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.slouch.dev/blog/today-i-remember-python-concurrency/" /><meta property="og:image" content="https://blog.slouch.dev/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-19T00:00:00+00:00" /><meta property="og:site_name" content="slouch&#39;s blog" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.slouch.dev/images/share.png"/>
+
+<meta name="twitter:title" content="Today I Remember - Python Concurrency"/>
+<meta name="twitter:description" content="Python is a powerful and versatile language, but there is one thing it is not so great at: multithreading. If you have ever tried to write a Python script that spawns multiple threads to do work in parallel, you may have run into issues with deadlocks, race conditions, or other concurrency bugs.
+But fear not - there is a solution! The concurrent.futures module in Python 3 makes multithreading much more manageable, and can help you avoid many of the common pitfalls that come with concurrent programming."/>
+
+
+
+<meta itemprop="name" content="Today I Remember - Python Concurrency">
+<meta itemprop="description" content="Python is a powerful and versatile language, but there is one thing it is not so great at: multithreading. If you have ever tried to write a Python script that spawns multiple threads to do work in parallel, you may have run into issues with deadlocks, race conditions, or other concurrency bugs.
+But fear not - there is a solution! The concurrent.futures module in Python 3 makes multithreading much more manageable, and can help you avoid many of the common pitfalls that come with concurrent programming."><meta itemprop="datePublished" content="2023-04-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="371"><meta itemprop="image" content="https://blog.slouch.dev/images/share.png"/>
+<meta itemprop="keywords" content="today-i-remember," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>slouch&#39;s blog</h2>
+</a>
+<nav><hr>
+<a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+<hr>
+</nav>
+</header>
+  <main>
+
+<h1>Today I Remember - Python Concurrency</h1>
+<p>
+  <i>
+    <time datetime='2023-04-19' pubdate>
+      2023-04-19
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Python is a powerful and versatile language, but there is one thing it is not so great at: multithreading. If you have ever tried to write a Python script that spawns multiple threads to do work in parallel, you may have run into issues with deadlocks, race conditions, or other concurrency bugs.</p>
+<p>But fear not - there is a solution! The <code>concurrent.futures</code> module in Python 3 makes multithreading much more manageable, and can help you avoid many of the common pitfalls that come with concurrent programming.</p>
+<p>At its core, <code>concurrent.futures</code> is a high-level interface for managing pools of threads or processes in Python. It provides a simple and intuitive API for executing functions asynchronously and collecting their results.</p>
+<p>One of the key benefits of <code>concurrent.futures</code> is that it abstracts away many of the low-level details of thread and process management, such as thread synchronization, task scheduling, and inter-process communication. This makes it much easier to write concurrent code that is correct, efficient, and maintainable.</p>
+<p>To get started with <code>concurrent.futures</code>, you can simply import the module and create an instance of the <code>ThreadPoolExecutor</code> or <code>ProcessPoolExecutor</code> class, depending on whether you want to use threads or processes. You can then submit tasks to the executor using the <code>submit()</code> method, and collect the results using the <code>result()</code> method.</p>
+<p>For example, let us say you have a list of URLs that you want to download in parallel. You could use <code>concurrent.futures</code> to spawn a pool of worker threads to download the URLs concurrently, like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> concurrent.futures <span style="color:#f92672">import</span> ThreadPoolExecutor
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>urls <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;https://www.example.com&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;https://www.google.com&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;https://www.github.com&#39;</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">download_url</span>(url):
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span>content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> ThreadPoolExecutor(max_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>    futures <span style="color:#f92672">=</span> [executor<span style="color:#f92672">.</span>submit(download_url, url) <span style="color:#66d9ef">for</span> url <span style="color:#f92672">in</span> urls]
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> [future<span style="color:#f92672">.</span>result() <span style="color:#66d9ef">for</span> future <span style="color:#f92672">in</span> futures]
+</span></span></code></pre></div><p>This code creates a pool of three worker threads using a <code>ThreadPoolExecutor</code>, and submits a task to download each URL using the <code>submit()</code> method. The <code>result()</code> method is then used to collect the results of each task.</p>
+<p>By using <code>concurrent.futures</code>, you can write concurrent Python code that is more readable, more maintainable, and less prone to bugs than traditional threading or multiprocessing approaches. If you are interested in learning more, check out the <!-- raw HTML omitted -->official documentation<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --> or this <!-- raw HTML omitted -->excellent tutorial<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><!-- raw HTML omitted --></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://docs.python.org/3/library/concurrent.futures.html">https://docs.python.org/3/library/concurrent.futures.html</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://rednafi.github.io/digressions/python/2020/04/21/python-concurrent-futures.html">https://rednafi.github.io/digressions/python/2020/04/21/python-concurrent-futures.html</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</content>
+<p>
+  
+  <a href="https://blog.slouch.dev/blog/tag/today-i-remember/">#today-i-remember</a>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<small>
+    Support me: <a href="https://www.buymeacoffee.com/slouchd">Buy me a coffee ☕️</a>
+    <br>
+    
+        &copy; Copyright 2023, slouch.
+    
+
+    
+</small></footer>
+
+    
+</body>
+
+</html>
