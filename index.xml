@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Flask vs FastAPI</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-flask-vs-fastapi/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-flask-vs-fastapi/</guid>
+      <description>Over the past couple of years people have asked a number of times why I keep choosing FastAPI over Flask. I should add a caveat that I am pretty much entirely Python based. So, when it comes to production ready APIs and such. FastAPI is my go-to.
+Why FastAPI over Flask then? FastAPI is a modern, fast, and efficient framework that offers a wide range of features that make it an ideal choice for building high-performance web applications.</description>
+    </item>
+    
+    <item>
+      <title>Today I Remember - The Cloud?!</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-the-cloud/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-the-cloud/</guid>
+      <description>After trying to convince management, that the cloud is the right choice for the majority of our architectures moving forwards. I found myself trying to summarise why it was important. Although this sounds like an advert (haha). This does go towards encapsulating some of the benefits of cloud native.
+Are you looking for a way to make your workloads more efficient and cost-effective? If so, you might want to consider adopting a cloud-native approach to your computing infrastructure.</description>
+    </item>
+    
+    <item>
+      <title>Today I Remember - Python Pydantic</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-python-pydantic/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-python-pydantic/</guid>
+      <description>Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&amp;rsquo;s type annotations to define the shape of your data.
+With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code.</description>
+    </item>
+    
+    <item>
+      <title>Today I Remember - Python SQLite</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-python-sqlite/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-python-sqlite/</guid>
+      <description>Have you ever needed to work with SQLite databases in Python? Perhaps you are dealing with a large dataset or building a web application that requires persistent storage. Whatever your use case, Python&amp;rsquo;s built-in sqlite3 module makes it easy to read, write, and manipulate SQLite databases.
+To get started, you will first need to create a SQL connection to your SQLite database using the sqlite3.connect() method. This method takes the name of your SQLite database file as an argument and returns a connection object.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Python Concurrency</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-python-concurrency/</link>
