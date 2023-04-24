@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://blog.slouch.dev/images/favicon.png" />
+<title>Today I Remember - Python Pydantic | slouch&#39;s blog</title>
+<meta name="title" content="Today I Remember - Python Pydantic" />
+<meta name="description" content="Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&rsquo;s type annotations to define the shape of your data.
+With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code." />
+<meta name="keywords" content="today-i-remember," />
+
+
+<meta property="og:title" content="Today I Remember - Python Pydantic" />
+<meta property="og:description" content="Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&rsquo;s type annotations to define the shape of your data.
+With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.slouch.dev/blog/today-i-remember-python-pydantic/" /><meta property="og:image" content="https://blog.slouch.dev/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-21T00:00:00+00:00" /><meta property="og:site_name" content="slouch&#39;s blog" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.slouch.dev/images/share.png"/>
+
+<meta name="twitter:title" content="Today I Remember - Python Pydantic"/>
+<meta name="twitter:description" content="Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&rsquo;s type annotations to define the shape of your data.
+With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code."/>
+
+
+
+<meta itemprop="name" content="Today I Remember - Python Pydantic">
+<meta itemprop="description" content="Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&rsquo;s type annotations to define the shape of your data.
+With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code."><meta itemprop="datePublished" content="2023-04-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="289"><meta itemprop="image" content="https://blog.slouch.dev/images/share.png"/>
+<meta itemprop="keywords" content="today-i-remember," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>slouch&#39;s blog</h2>
+</a>
+<nav><hr>
+<a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+<hr>
+</nav>
+</header>
+  <main>
+
+<h1>Today I Remember - Python Pydantic</h1>
+<p>
+  <i>
+    <time datetime='2023-04-21' pubdate>
+      2023-04-21
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Are you tired of dealing with the hassle of manual data validation in your Python code? If so, Pydantic might be the solution you are looking for. Pydantic is a data validation and settings management library that uses Python&rsquo;s type annotations to define the shape of your data.</p>
+<p>With Pydantic, you can define data models as standard Python classes with type annotations, making it easy to declare the types of your variables and get editor support for your code. For example, here is a simple function that takes a user ID as a string argument and returns it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Declare a variable as a str and get editor support inside the function</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>(user_id: str):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> user_id
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A Pydantic model</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    id: int
+</span></span><span style="display:flex;"><span>    name: str
+</span></span><span style="display:flex;"><span>    joined: date
+</span></span></code></pre></div><p>In this code, we are using Python&rsquo;s built-in datetime module and Pydantic&rsquo;s <code>BaseModel</code> class to define a simple data model for a user. The <code>User</code> class has three fields: an integer id, a string name, and a date object representing the date the user joined.</p>
+<p>Once you have defined your data model, you can use it to validate and manipulate data with ease. Here is an example of how you might create and manipulate instances of the <code>User</code> class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_user: User <span style="color:#f92672">=</span> User(id<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John Doe&#34;</span>, joined<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2018-07-19&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>second_user_data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Mary&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;joined&#34;</span>: <span style="color:#e6db74">&#34;2018-11-30&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>my_second_user: User <span style="color:#f92672">=</span> User(<span style="color:#f92672">**</span>second_user_data)
+</span></span></code></pre></div><p>In this code, we are creating two instances of the <code>User</code> class: <code>my_user</code> and <code>my_second_user</code>. The first instance is created using explicit arguments, while the second instance is created using a dictionary that&rsquo;s unpacked using the <code>**</code> operator.</p>
+<p>For more information on how to use Pydantic, check out the <!-- raw HTML omitted -->official documentation<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted -->.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://docs.pydantic.dev/">https://docs.pydantic.dev/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</content>
+<p>
+  
+  <a href="https://blog.slouch.dev/blog/tag/today-i-remember/">#today-i-remember</a>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<small>
+    Support me: <a href="https://www.buymeacoffee.com/slouchd">Buy me a coffee ☕️</a>
+    <br>
+    
+        &copy; Copyright 2023, slouch.
+    
+
+    
+</small></footer>
+
+    
+</body>
+
+</html>
