@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - AWS DDK</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-aws-ddk/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-aws-ddk/</guid>
+      <description>If you are using Amazon Web Services (AWS) and looking for a powerful development kit to help you build and manage your data pipelines, you might want to check out the AWS DataOps Development Kit (DDK). Built on top of AWS&amp;rsquo;s popular Cloud Development Kit (CDK), the DDK is a powerful tool that offers a wide range of features for building and managing data pipelines in the cloud.
+One of the key advantages of the DDK is its ease of use.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Flask vs FastAPI</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-flask-vs-fastapi/</link>
