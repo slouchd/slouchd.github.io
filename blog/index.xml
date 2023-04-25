@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Tue, 25 Apr 2023 08:00:00 +0100</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Today I Remember - Linux Desktop Automation</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-linux-desktop-automation/</link>
-      <pubDate>Tue, 25 Apr 2023 08:00:00 +0100</pubDate>
+      <pubDate>Tue, 25 Apr 2023 07:00:00 +0000</pubDate>
       
       <guid>https://blog.slouch.dev/blog/today-i-remember-linux-desktop-automation/</guid>
       <description>After receiving an edge-case in one of the systems I maintain. I had to come up with a pretty janky script to automate a Linux desktop application.
