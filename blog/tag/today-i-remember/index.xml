@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Tue, 25 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - E-mail Sign-up Trick</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-e-mail-sign-up-trick/</link>
+      <pubDate>Wed, 26 Apr 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-e-mail-sign-up-trick/</guid>
+      <description>If you are looking for a simple but effective way to cut down on spam in your email inbox, you might want to try using the &amp;ldquo;+&amp;rdquo; operator in your email address. By appending a &amp;ldquo;+&amp;rdquo; symbol followed by a custom tag to your email address, you can create unique email addresses for each service or website you sign up for, while still receiving all emails in your main inbox.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Linux Desktop Automation</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-linux-desktop-automation/</link>
