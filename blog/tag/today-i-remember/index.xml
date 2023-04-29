@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Fri, 28 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Romance Scams</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-romance-scams/</link>
+      <pubDate>Sat, 29 Apr 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-romance-scams/</guid>
+      <description>As an engineer, I keep on top of the most recent cybersecurity trends. Ensuring I do the most to keep myself, my customers and the internet secure. It is well known that humans tend to be the weakest link in the chain of security. With that in mind, you may have heard of cat-fishing. But do you know about the larger umbrella of romance scams?
+Romance scams are a type of online fraud in which criminals create fake profiles on dating sites, social media platforms, or other online forums.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Python Application Automation</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-python-application-automation/</link>
