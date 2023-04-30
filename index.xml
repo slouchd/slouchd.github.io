@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Sat, 29 Apr 2023 09:20:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Almost Undetected Chromedriver</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-almost-undetected-chromedriver/</link>
+      <pubDate>Sun, 30 Apr 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-almost-undetected-chromedriver/</guid>
+      <description>Web scraping has become an essential tool for data analysts, researchers, and even businesses. However, as websites have become smarter, web scraping has become more difficult. Many websites now implement tools such as CloudFlare to detect and block web scraping bots, which can make data collection a time-consuming and frustrating experience.
+To help overcome these obstacles, developers have created various tools to make web scraping more effective. One such tool is the undetected-chromedriver1 library, which helps to speed up some necessary obfuscation work.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Romance Scams</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-romance-scams/</link>
