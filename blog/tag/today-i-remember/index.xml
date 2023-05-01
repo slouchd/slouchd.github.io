@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Sun, 30 Apr 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - QRank Wikidata</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-qrank-wikidata/</link>
+      <pubDate>Mon, 01 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-qrank-wikidata/</guid>
+      <description>I recently came across QRank1, which is an exciting project built on top of Wikidata that aims to provide a ranking signal for Wikidata entities. The QRank algorithm works by aggregating page view statistics for various Wikimedia projects, including Wikipedia, Wikitravel, Wikibooks, and Wikispecies. This data is then used to calculate a QRank score for each Wikidata entity, which can be used to assess the entity&amp;rsquo;s notability, popularity, and relevance.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Almost Undetected Chromedriver</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-almost-undetected-chromedriver/</link>
