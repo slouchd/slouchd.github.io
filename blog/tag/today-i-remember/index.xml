@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Mon, 01 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Google Chrome Stable for ARM</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-google-chrome-stable-for-arm/</link>
+      <pubDate>Tue, 02 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-google-chrome-stable-for-arm/</guid>
+      <description>Another short one today. A bit of a moan at that too&amp;hellip; Google Chrome is only packaged for amd64, and is not available for ARM on Linux systems. This is so frustrating!</description>
+    </item>
+    
     <item>
       <title>Today I Remember - QRank Wikidata</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-qrank-wikidata/</link>
