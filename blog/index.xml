@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Tue, 02 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - AVDs on AWS</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-avds-on-aws/</link>
+      <pubDate>Wed, 03 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-avds-on-aws/</guid>
+      <description>Recently I have been messing around with Android Virtual Devices (AVD). I realised, an issue when moving my tests to Amazon Web Services (AWS). The issue was with using Kernel-based Virtual Machine (KVM). Which does make sense from an infrastructure perspective for AWS. However, I still needed to resolve the issue.
+KVM (Kernel-based Virtual Machine) is a widely used virtualization technology that enables the running of multiple virtual machines (VMs) on a single host machine.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Google Chrome Stable for ARM</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-google-chrome-stable-for-arm/</link>
