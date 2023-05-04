@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://blog.slouch.dev/images/favicon.png" />
+<title>Today I Remember - Python HTTP Requests Optimisation | slouch&#39;s blog</title>
+<meta name="title" content="Today I Remember - Python HTTP Requests Optimisation" />
+<meta name="description" content="In today&rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.
+One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one." />
+<meta name="keywords" content="today-i-remember," />
+
+
+<meta property="og:title" content="Today I Remember - Python HTTP Requests Optimisation" />
+<meta property="og:description" content="In today&rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.
+One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.slouch.dev/blog/today-i-remember-python-http-requests-optimisation/" /><meta property="og:image" content="https://blog.slouch.dev/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-05-04T07:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-04T07:00:00+00:00" /><meta property="og:site_name" content="slouch&#39;s blog" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.slouch.dev/images/share.png"/>
+
+<meta name="twitter:title" content="Today I Remember - Python HTTP Requests Optimisation"/>
+<meta name="twitter:description" content="In today&rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.
+One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one."/>
+
+
+
+<meta itemprop="name" content="Today I Remember - Python HTTP Requests Optimisation">
+<meta itemprop="description" content="In today&rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.
+One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one."><meta itemprop="datePublished" content="2023-05-04T07:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-04T07:00:00+00:00" />
+<meta itemprop="wordCount" content="242"><meta itemprop="image" content="https://blog.slouch.dev/images/share.png"/>
+<meta itemprop="keywords" content="today-i-remember," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>slouch&#39;s blog</h2>
+</a>
+<nav><hr>
+<a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+<hr>
+</nav>
+</header>
+  <main>
+
+<h1>Today I Remember - Python HTTP Requests Optimisation</h1>
+<p>
+  <i>
+    <time datetime='2023-05-04' pubdate>
+      2023-05-04
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>In today&rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.</p>
+<p>One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one. This can significantly reduce the time it takes to complete a large number of requests.</p>
+<p>Another option for faster HTTP requests is concurrent requests. With concurrent requests, you can send multiple requests at the same time, but unlike async requests, you do not have to wait for all of them to return before moving on to the next one. This can be especially useful if you need to perform many HTTP requests in parallel, but do not want to wait for all of them to complete before moving on to other tasks.</p>
+<p>Finally, there are streaming options for faster HTTP requests. Streaming allows you to download large files or data streams without having to wait for the entire file to download before you can start processing it. This can be especially useful when dealing with very large files or data streams.</p>
+<p>There are some very clean and succint descriptions of these techniques here: (Wayback machine archive link as original site is down) <a href="https://web.archive.org/web/20221225024307/https://julien.danjou.info/python-and-fast-http-clients/">https://web.archive.org/web/20221225024307/https://julien.danjou.info/python-and-fast-http-clients/</a></p>
+
+</content>
+<p>
+  
+  <a href="https://blog.slouch.dev/blog/tag/today-i-remember/">#today-i-remember</a>
+  
+</p>
+
+  </main>
+  <footer><hr>
+<small>
+    Support me: <a href="https://www.buymeacoffee.com/slouchd">Buy me a coffee ☕️</a>
+    <br>
+    
+        &copy; Copyright 2023, slouch.
+    
+
+    
+</small></footer>
+
+    
+</body>
+
+</html>
