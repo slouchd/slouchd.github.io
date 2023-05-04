@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Wed, 03 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Python HTTP Requests Optimisation</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-python-http-requests-optimisation/</link>
+      <pubDate>Thu, 04 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-python-http-requests-optimisation/</guid>
+      <description>In today&amp;rsquo;s world, speed is everything. When it comes to HTTP requests, faster is always better. Fortunately, there are many advanced methods to making faster HTTP requests in Python, including async requests, concurrent requests, and streaming options.
+One of the most powerful options for faster HTTP requests is async requests. With async requests, you can send multiple requests simultaneously and wait for them all to return, rather than waiting for each request to complete before sending the next one.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - AVDs on AWS</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-avds-on-aws/</link>
