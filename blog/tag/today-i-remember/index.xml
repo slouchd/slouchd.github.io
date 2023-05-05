@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Thu, 04 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Posting Schedule</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-posting-schedule/</link>
+      <pubDate>Fri, 05 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-posting-schedule/</guid>
+      <description>I have been producing tons of content recently, enthusiastic and remembering all of the things I can, wanting to share them with people on the internet. However, I started a little too excitedly!
+Starting from next week, I am going to change the posting schedule. I will be posting content as much as I can, but realistically every Monday, Wednesday, and Friday.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Python HTTP Requests Optimisation</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-python-http-requests-optimisation/</link>
