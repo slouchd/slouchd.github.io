@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Fri, 05 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - JMP Chat SMS Service</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-jmp-chat-sms-service/</link>
+      <pubDate>Mon, 08 May 2023 08:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-jmp-chat-sms-service/</guid>
+      <description>Recently I was curious about automating SMS. I really hate spam messages and wanted to distance my personal number from, well, not too privacy friendly services. While trialling digital SMS providers. I came across a myriad of issues. The issues almost always stem when receiving messages. The biggest issue of them all I found was receiving from short codes.
+Short code numbers are the types of numbers you receive messages from when you get SMS/MMS marketing.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Posting Schedule</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-posting-schedule/</link>
