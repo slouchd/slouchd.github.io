@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Mon, 08 May 2023 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2023 08:30:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - cURL Impersonation</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-curl-impersonation/</link>
+      <pubDate>Wed, 10 May 2023 08:30:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-curl-impersonation/</guid>
+      <description>As a developer, linux user or command line fan, you might be familiar with the curl command. It is a powerful tool that allows you to transfer data from or to a server using various protocols, including HTTP, FTP, and SFTP. However, when testing websites, you may encounter issues where the server tries to fingerprint you using TLS, making it difficult to get the desired results.
+Enter curl-impersonate1. It is an open-source tool that can be used as a drop-in replacement for the curl command, making it easier to bypass fingerprinting attempts and obtain the results you need.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - JMP Chat SMS Service</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-jmp-chat-sms-service/</link>
