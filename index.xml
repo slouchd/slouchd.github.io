@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Wed, 10 May 2023 08:30:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 May 2023 09:20:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Street (and Path!) Mapping</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-street-and-path-mapping/</link>
+      <pubDate>Fri, 12 May 2023 09:20:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-street-and-path-mapping/</guid>
+      <description>Street mapping is a crucial aspect of online mapping engines such as Google Maps and Apple Maps. It allows users to view streets and neighborhoods from the comfort of their own devices. But have you ever thought about how these companies collect their mapping data?
+Recently, I had a personal experience with Apple Maps, where a mapping vehicle drove by me and I of course waved (claim to fame). This got me thinking about how much of an operation it must be to complete street mapping for online mapping engines.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - cURL Impersonation</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-curl-impersonation/</link>
