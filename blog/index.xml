@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Fri, 12 May 2023 09:20:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Hacker Scripts (Story)</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-hacker-scripts-story/</link>
+      <pubDate>Mon, 15 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-hacker-scripts-story/</guid>
+      <description>The engineering mindset is something truly unique, and it is a trait that many people both admire and strive to emulate. Those who possess this mindset are often able to come up with creative solutions to complex problems, and are driven by a desire to continually improve upon what they have built.
+The hacker mindset being no different. Except for it containing a pinch more sarcasm and wit. I have seen a lot of very funny (meme worthy) scripting in my life.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Street (and Path!) Mapping</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-street-and-path-mapping/</link>
