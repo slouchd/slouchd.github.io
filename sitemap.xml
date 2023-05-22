@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.slouch.dev/blog/</loc>
-    <lastmod>2023-05-15T07:00:00+00:00</lastmod>
+    <lastmod>2023-05-22T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/</loc>
-    <lastmod>2023-05-15T07:00:00+00:00</lastmod>
+    <lastmod>2023-05-22T07:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.slouch.dev/blog/today-i-remember-hacker-scripts-story/</loc>
-    <lastmod>2023-05-15T07:00:00+00:00</lastmod>
+    <loc>https://blog.slouch.dev/blog/today-i-remember-python-call-graphs/</loc>
+    <lastmod>2023-05-22T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/blog/tag/today-i-remember/</loc>
+    <lastmod>2023-05-22T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.slouch.dev/blog/today-i-remember-hacker-scripts-story/</loc>
     <lastmod>2023-05-15T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.slouch.dev/blog/today-i-remember-street-and-path-mapping/</loc>

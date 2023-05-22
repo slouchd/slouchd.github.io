@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>&amp;copy; Copyright 2023, slouch.</copyright>
-    <lastBuildDate>Mon, 15 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 07:00:00 +0000</lastBuildDate><atom:link href="https://blog.slouch.dev/blog/tag/today-i-remember/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Remember - Python Call Graphs</title>
+      <link>https://blog.slouch.dev/blog/today-i-remember-python-call-graphs/</link>
+      <pubDate>Mon, 22 May 2023 07:00:00 +0000</pubDate>
+      
+      <guid>https://blog.slouch.dev/blog/today-i-remember-python-call-graphs/</guid>
+      <description>Understanding the flow of function calls in your Python codebase is essential for analyzing dependencies, identifying bottlenecks, and improving overall code structure. One effective way to visualize and analyze these call relationships is through Python call graphs. In this article, we will explore how Pyan and Graphviz can be utilized to generate and interpret Python call graphs.
+A Python call graph provides a visual representation of how functions interact with each other within a codebase.</description>
+    </item>
+    
     <item>
       <title>Today I Remember - Hacker Scripts (Story)</title>
       <link>https://blog.slouch.dev/blog/today-i-remember-hacker-scripts-story/</link>
